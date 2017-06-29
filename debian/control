@@ -1,0 +1,13 @@
+Source: vx-dga-l-nwjs
+Section: utils
+Priority: extra
+Maintainer: Arturo Martín <amartinromero@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.5
+Homepage: http://wiki.vitalinux.educa.aragon.es
+
+Package: vx-dga-l-nwjs
+Architecture: amd64 
+Depends: ${misc:Depends}
+Description: Entorno de ejecución NW.js para linux de 64 bits
+ Entorno de ejecución NW.js para linux de 64 bits necesario para ejecutar aplicaciones creadas en NW.js

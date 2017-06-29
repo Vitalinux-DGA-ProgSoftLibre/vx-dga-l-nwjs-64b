@@ -1,0 +1,5 @@
+vx-dga-l-nwjs (1.0-1) unstable; urgency=low
+
+  * Entorno de ejecución NW.js para linux de 64 bits
+
+ -- Arturo Martín <amartinromero@gmail.com>  Thu, 29 Jun 2017 01:45:06 +0200
