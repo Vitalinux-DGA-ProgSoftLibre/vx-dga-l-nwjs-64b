@@ -1,14 +1,18 @@
-# Paquete DEB vx-dga-l-nwjs-64b
+# Paquete DEB vx-dga-l-nwjs (64 bits)
 
-Paquete encargado de distribuir el entorno de ejecución NW.js de 64bits
+Paquete encargado distribuir el entorno de trabajo nw.js entre los equipos con la finalidad de poder ejecutar aplicaciones basadas en ese framework
 
 # Usuarios Destinatarios
 
-Usuarios que hacen uso de aplicaciones hechas bajo NW.js
+Usuarios que quieren lanzar aplicaciones basadas en nw.js
 
 # Aspectos Interesantes:
 
-La ubicación del binario nw es /usr/share/vitalinux/nwjs
+La ruta donde se almacena es en:
+
+```
+/usr/share/vitalinux/nwjs/nwjs-[version]
+```
 
 # Como Crear o Descargar el paquete DEB a partir del codigo de GitHub
 Para crear el paquete DEB será necesario encontrarse dentro del directorio donde localizan los directorios que componen el paquete.  Una vez allí, se ejecutará el siguiente comando (es necesario tener instalados los paquetes apt-get install debhelper devscripts):

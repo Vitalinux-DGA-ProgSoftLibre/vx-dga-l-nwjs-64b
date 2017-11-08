@@ -1,4 +1,4 @@
-# Paquete DEB vx-dga-l-nwjs
+# Paquete DEB vx-dga-l-nwjs (64 bits)
 
 Paquete encargado distribuir el entorno de trabajo nw.js entre los equipos con la finalidad de poder ejecutar aplicaciones basadas en ese framework
 
@@ -11,7 +11,7 @@ Usuarios que quieren lanzar aplicaciones basadas en nw.js
 La ruta donde se almacena es en:
 
 ```
-/usr/share/vitalinux/nwjs-[version]
+/usr/share/vitalinux/nwjs/nwjs-[version]
 ```
 
 # Como Crear o Descargar el paquete DEB a partir del codigo de GitHub

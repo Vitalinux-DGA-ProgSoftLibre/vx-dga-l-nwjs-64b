@@ -20,6 +20,20 @@ set -e
 
 case "$1" in
     install|upgrade)
+	# Se elimina la versión de NWjs que pudiera haber ya instalada en el equipo
+	DIRDESTINO="/usr/share/vitalinux/nwjs"
+	if test -d "${DIRDESTINO}" ; then
+		if rm -Rf "${DIRDESTINO}/*" ; then
+			echo "=> Se ha eliminado la versión de nw.js que pudiera estar configurada ..."
+		fi
+	fi
+
+	ENLACENWJS="/usr/bin/nw"
+	if test -L "${ENLACENWJS}" ; then
+		if rm -f "${ENLACENWJS}" ; then
+			echo "=> Se ha eliminado el anterior enlace al ejecutable de nw ${ENLACENWJS} ..."
+		fi
+	fi
 
     ;;
 

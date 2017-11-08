@@ -20,19 +20,17 @@ set -e
 case "$1" in
     remove)
 
-	VERSION="nwjs-v0.23.5-linux-x64.tar.gz"
-	FICHERO="/usr/share/vitalinux/tmp/${VERSION}"
 	DIRDESTINO="/usr/share/vitalinux/nwjs"
-	DIRNWJS="echo ${VERSION} | awk -F".tar.gz" '{ print $1 }'"
-
 	if test -d "${DIRDESTINO}" ; then
 		if rm -Rf "${DIRDESTINO}/*" ; then
 			echo "=> Se ha eliminado NW.js del equipo ..."
 		fi
 	fi
-	if test -L /usr/bin/nw ; then
-		if rm -f /usr/bin/nw ; then
-			echo "=> Se ha eliminado el enlace al ejecutable de nw /usr/bin/nw ..."
+	
+	ENLACENWJS="/usr/bin/nw"
+	if test -L "${ENLACENWJS}" ; then
+		if rm -f "${ENLACENWJS}" ; then
+			echo "=> Se ha eliminado el enlace al ejecutable de nw ${ENLACENWJS} ..."
 		fi
 	fi
 
